@@ -27,3 +27,10 @@ const registrationCard = {
 let canSellAlcohol = registrationCard => registrationCard.age > adultAge
 
 // console.log(canSellAlcohol(registrationCard))
+
+//4. 할인가 계산
+function getDiscountedPrice (originalPrice, discountPercent) {
+	return originalPrice - ( originalPrice * parseInt(discountPercent) / 100 ) 
+}
+
+// console.log(getDiscountedPrice(18700,'20%'))
