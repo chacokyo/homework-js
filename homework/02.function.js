@@ -5,3 +5,12 @@ function greetUser (username) {
 }
 
 // console.log(greetUser('jisu'))
+
+// 2. 원가 계산
+
+const calculateOriginalPrice = function (priceWithTax) {
+	const tax = 3.3
+	return priceWithTax - (priceWithTax / (100  + tax))
+}
+
+// console.log(calculateOriginalPrice(1000))
