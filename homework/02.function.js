@@ -34,3 +34,37 @@ function getDiscountedPrice (originalPrice, discountPercent) {
 }
 
 // console.log(getDiscountedPrice(18700,'20%'))
+
+//5.등급 판단
+function infoResult(userScore){
+
+	const info = {
+		score : userScore,
+		grade : 'A',
+		description: '매우 우수'
+	}
+	if(!info.score){
+		return '점수가 없습니다.'
+	}
+	else if (userScore >= 90){
+		info.grade= 'A',
+		info.description= '매우 우수'
+	} else if (userScore >= 80){
+		info.grade= 'B',
+		info.description= '우수'
+	}  else if (userScore >= 70){
+		info.grade= 'C',
+		info.description= '보통'
+	}  else if (userScore > 60){
+		info.grade= 'D',
+		info.description= '미달,통과 기준 근접'
+	}  else {
+		info.grade= 'F',
+		info.description= '낙제'
+	}
+
+		return info
+
+}
+
+// console.log(infoResult())
