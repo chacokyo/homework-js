@@ -14,3 +14,16 @@ const calculateOriginalPrice = function (priceWithTax) {
 }
 
 // console.log(calculateOriginalPrice(1000))
+
+//3. 주류 판매 가능 여부
+const adultAge = 19
+
+const registrationCard = {
+	name : 'jisu',
+	age : 20,
+	gender : 'women'
+}
+
+let canSellAlcohol = registrationCard => registrationCard.age > adultAge
+
+// console.log(canSellAlcohol(registrationCard))
