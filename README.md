@@ -7,3 +7,4 @@
 | --- | --- |
 | 1주차 | [`변수,상수,함수 작성 과제`](./md/week1-retrospect.md) |
 | 2주차 | [`캐러셀 과제`](./md/week2-retrospect.md) |
+| 4주차 | [`타입어헤드 과제`](./md/week4-retrospect.md) |
